@@ -12,8 +12,8 @@
 	url : `http://<domain>:port(default is 3001 )/api/authenticate`<br />
 	type : POST<br />
 	payload : <br />{<br />
-			&nbsp;"userid":"1",<br />
-			&nbsp;"email":"romin.k.irani@gmail.com"<br />
+			&nbsp;"userid":"userId from employee.json file",<br />
+			&nbsp;"email":"emailAddress from employee.json file"<br />
 		}<br />
 	response : auth token<br />
 
