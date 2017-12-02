@@ -17,7 +17,7 @@
 		}<br />
 	response : auth token<br />
 
-2) go to your favourite rest client and use below details to get details of user<br />
+2) go to your favourite rest client and use below details to get user details<br />
 	url : `http://<domain>:port(default is 3001 )/api/getuser`<br />
 	type : POST<br />
 	header : `Bearer <auth token from authenticate api>`<br />
