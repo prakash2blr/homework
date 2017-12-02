@@ -44,7 +44,12 @@ GLOBAL.router.post("/getuser",function(request,response,next) {
 				userAll = new UserModel();
 				userid = payLoad.iss;
 				userDetails = userAll.getUserById(userid);
-				response.status(200).json(userDetails);
+				if(userDetails){
+					response.status(200).json(userDetails);					
+				}
+				else{
+					response.status(401).json("Not Authorized!!!");					
+				}
 			}
 			else{
 				response.status(401).send("Not Authorized!!!");
