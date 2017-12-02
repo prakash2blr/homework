@@ -31,4 +31,4 @@
 		  &nbsp;"phoneNumber": "408-1234567",<br />
 		  &nbsp;"emailAddress": "romin@gmail.com"<br />
 		}<br />
-### user employee.json file for sample data<br />
+### Please go through employee.json file for sample data<br />
