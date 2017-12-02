@@ -14,6 +14,14 @@ class UserModel{
 		    	return emp.userId===userid;
 		    });
 		};
+		this.updateByUserId = function (userid) {
+			console.log("update API was called");
+			return "updated";
+		};
+		this.deleteByUserId = function (userid) {
+			console.log("delete API was called");
+			return "deleted";
+		};				
 	}
 }
 module.exports = UserModel;

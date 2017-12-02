@@ -56,3 +56,13 @@ GLOBAL.router.post("/getuser",function(request,response,next) {
 	        });
 		}
 });
+
+GLOBAL.router.put("/updateuser",function(request,response,next) {
+				let userAll = new UserModel(),
+				userDetails = userAll.updateByUserId('userid');
+});
+
+GLOBAL.router.delete("/deleteuser",function(request,response,next) {
+				let userAll = new UserModel(),
+				userDetails = userAll.deleteByUserId('userid');
+});

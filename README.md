@@ -3,12 +3,13 @@
 # Steps to install (run following commands)
 
 1) npm install
-2) grunt (for build and quality checks)
-3) npm start
+2) export/set NODE_ENV="your secret key" (for secret key command depends on your OS)
+3) grunt (for build and quality checks)
+4) npm start
 
 # API
 1) go to your favourite rest client and use below url to authenticate user<br />
-	url : `host/api/authenticate`<br />
+	url : `http://<domain>:port(default is 3001 )/api/authenticate`<br />
 	payload : <br />{<br />
 			&nbsp;"userid":"1",<br />
 			&nbsp;"email":"romin.k.irani@gmail.com"<br />
@@ -16,7 +17,7 @@
 	response : auth token<br />
 
 2) go to your favourite rest client and use below url to get details of user<br />
-	url : `host/api/getuser`<br />
+	url : `http://<domain>:port(default is 3001 )/api/getuser`<br />
 	header : `Bearer <auth token from authenticate api>`<br />
 	response : user object<br />
 	for example<br />
@@ -31,4 +32,7 @@
 		  &nbsp;"phoneNumber": "408-1234567",<br />
 		  &nbsp;"emailAddress": "romin@gmail.com"<br />
 		}<br />
+
+### please set NODE_ENV for secret key<br />		
 ### Please go through employee.json file for sample data<br />
+### Update and Delete APIs are dummy APIs<br />
