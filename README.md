@@ -1,12 +1,12 @@
 # This is simple example for microservice with express and JWT
 
-#Steps to install (run following commands)
+# Steps to install (run following commands)
 
 1) npm install
 2) grunt (for build and quality checks)
 3) npm start
 
-#API
+# API
 1) go to your favourite rest client and use below url to authenticate user
 	url : `host/api/authenticate`
 	payload : {
@@ -32,4 +32,4 @@
 		  "emailAddress": "romin.k.irani@gmail.com"
 		}
 
-#user employee.json file for sample data
+# user employee.json file for sample data
