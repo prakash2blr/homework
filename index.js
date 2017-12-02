@@ -8,8 +8,8 @@ const express = require("express"),
 GLOBAL.jwt = require("jwt-simple");	  
 GLOBAL.router = express.Router();
 
-const middleWare = require("./app/middleware");
-const user = require("./app/controllers/user");
+const middleWare = require("./app/middleware"),
+	  user = require("./app/controllers/user");
 
 app.use(bodyParser.json());
 
