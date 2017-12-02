@@ -35,6 +35,5 @@
 		  &nbsp;"emailAddress": "romin@gmail.com"<br />
 		}<br />
 
-### Please set NODE_ENV for secret key<br />		
 ### Please go through employee.json file for sample data<br />
 ### Update and Delete APIs are dummy APIs<br />
