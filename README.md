@@ -8,16 +8,18 @@
 4) npm start
 
 # API
-1) go to your favourite rest client and use below url to authenticate user<br />
+1) go to your favourite rest client and use below details to authenticate user<br />
 	url : `http://<domain>:port(default is 3001 )/api/authenticate`<br />
+	type : POST<br />
 	payload : <br />{<br />
 			&nbsp;"userid":"1",<br />
 			&nbsp;"email":"romin.k.irani@gmail.com"<br />
 		}<br />
 	response : auth token<br />
 
-2) go to your favourite rest client and use below url to get details of user<br />
+2) go to your favourite rest client and use below details to get details of user<br />
 	url : `http://<domain>:port(default is 3001 )/api/getuser`<br />
+	type : POST<br />
 	header : `Bearer <auth token from authenticate api>`<br />
 	response : user object<br />
 	for example<br />
