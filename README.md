@@ -3,7 +3,7 @@
 # Steps to install (run following commands)
 
 1) npm install
-2) export/set NODE_ENV="your secret key" (for secret key command depends on your OS)
+2) export/set NODE_ENV="your secret key" (Command depends on your OS)
 3) grunt (for build and quality checks)
 4) npm start
 
