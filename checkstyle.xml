@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<checkstyle>
+
+<file name="app/middleware.js">
+  
+  <error
+    line="2"
+    severity="info"
+    message="Cyclomatic: 4,
+    Halstead: 8.4220
+    | Effort: 4204.3
+    | Volume: 499.22
+    | Vocabulary: 43"
+    source="&lt;anonymous&gt;"
+    />
+  
+</file>
+
+
+
+<file name="index.js">
+  
+</file>
+
+
+
+<file name="app/controllers/user.js">
+  
+  <error
+    line="32"
+    severity="info"
+    message="Cyclomatic: 4,
+    Halstead: 8.8890
+    | Effort: 5597.2
+    | Volume: 629.69
+    | Vocabulary: 46"
+    source="&lt;anonymous&gt;"
+    />
+  
+</file>
+
+
+
+<file name="app/models/usermodel.js">
+  
+</file>
+
+
+
+</checkstyle>

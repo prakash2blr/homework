@@ -6,6 +6,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+grunt.loadNpmTasks('grunt-complexity');
     grunt.loadNpmTasks('grunt-contrib-concat');
     // Project configuration.
     grunt.initConfig({
@@ -51,6 +52,24 @@ module.exports = function(grunt) {
                     }
                 }
             },
+complexity: {
+            generic: {
+                src: jsFiles,
+                exclude: ['doNotTest.js'],
+                options: {
+                    breakOnErrors: true,
+                    jsLintXML: 'report.xml',         // create XML JSLint-like report 
+                    checkstyleXML: 'checkstyle.xml', // create checkstyle report 
+                    pmdXML: 'pmd.xml',               // create pmd report 
+                    errorsOnly: false,               // show only maintainability errors 
+                    cyclomatic: [3, 7, 12],          // or optionally a single value, like 3 
+                    halstead: [8, 13, 20],           // or optionally a single value, like 8 
+                    maintainability: 100,
+                    hideComplexFunctions: false,     // only display maintainability 
+                    broadcast: false                 // broadcast data over event-bus 
+                }
+            }
+        },
            concat:{
     		js:{
     		  src:[jsFiles],
@@ -72,7 +91,7 @@ module.exports = function(grunt) {
             }
     });
 
-    grunt.registerTask('default', ['clean','jshint','concat']);
+    grunt.registerTask('default', ['clean','jshint','complexity','concat']);
 
     console.log('\nGrunt executed at: ' + new Date() + '.\n');
 };

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jslint>
+<file name="app/middleware.js">
+  
+  <issue
+    line="2"
+    char="&lt;anonymous&gt;"
+    evidence="&lt;anonymous&gt; is too complicated"
+    reason="Cyclomatic: 4,
+    Halstead: 8.4220
+    | Effort: 4204.3
+    | Volume: 499.22
+    | Vocabulary: 43" />
+  
+</file>
+<file name="index.js">
+  
+</file>
+<file name="app/controllers/user.js">
+  
+  <issue
+    line="32"
+    char="&lt;anonymous&gt;"
+    evidence="&lt;anonymous&gt; is too complicated"
+    reason="Cyclomatic: 4,
+    Halstead: 8.8890
+    | Effort: 5597.2
+    | Volume: 629.69
+    | Vocabulary: 46" />
+  
+</file>
+<file name="app/models/usermodel.js">
+  
+</file>
+</jslint>
