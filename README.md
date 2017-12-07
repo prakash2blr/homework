@@ -12,8 +12,8 @@
 	url : `http://<domain>:port(default is 3001 )/api/authenticate`<br />
 	type : POST<br />
 	payload : <br />{<br />
-			&nbsp;"userid":"userId from employee.json file",<br />
-			&nbsp;"email":"emailAddress from employee.json file"<br />
+			&nbsp;nbsp;"userid":"userId from employee.json file",<br />
+			&nbsp;nbsp;"email":"emailAddress from employee.json file"<br />
 		}<br />
 	response : auth token<br />
 
@@ -24,15 +24,15 @@
 	response : user object<br />
 	for example<br />
 	  {<br />
-		  &nbsp;"userId": "1",<br />
-		  &nbsp;"jobTitleName": "Developer",<br />
-		  &nbsp;"firstName": "Romin",<br />
-		  &nbsp;"lastName": "Irani",<br />
-		  &nbsp;"preferredFullName": "Romin Irani",<br />
-		  &nbsp;"employeeCode": "E1",<br />
-		  &nbsp;"region": "CA",<br />
-		  &nbsp;"phoneNumber": "408-1234567",<br />
-		  &nbsp;"emailAddress": "romin@gmail.com"<br />
+		  &nbsp;nbsp;"userId": "1",<br />
+		  &nbsp;nbsp;"jobTitleName": "Developer",<br />
+		  &nbsp;nbsp;"firstName": "Romin",<br />
+		  &nbsp;nbsp;"lastName": "Irani",<br />
+		  &nbsp;nbsp;"preferredFullName": "Romin Irani",<br />
+		  &nbsp;nbsp;"employeeCode": "E1",<br />
+		  &nbsp;nbsp;"region": "CA",<br />
+		  &nbsp;nbsp;"phoneNumber": "408-1234567",<br />
+		  &nbsp;nbsp;"emailAddress": "romin@gmail.com"<br />
 		}
 <br />
 
