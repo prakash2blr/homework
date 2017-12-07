@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <pmd>
+<file name="app/controllers/authenticate.js"></file>
+
 <file name="app/middleware.js">
     <violation
-      beginline="2"
+      beginline="5"
       class="app/middleware.js"
       method="&lt;anonymous&gt;"
       priority="info"
@@ -15,7 +17,7 @@
 
 <file name="app/controllers/user.js">
     <violation
-      beginline="32"
+      beginline="9"
       class="app/controllers/user.js"
       method="&lt;anonymous&gt;"
       priority="info"
@@ -23,6 +25,8 @@
       The Complexity is too high. The value is 4
     </violation>
 </file>
+
+<file name="app/controllers/index.js"></file>
 
 <file name="app/models/usermodel.js"></file>
 

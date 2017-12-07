@@ -1,45 +1,22 @@
 "use strict";
-const moment = require("moment"),
+const express = require("express"),
+      router = express.Router(),
+      moment = require("moment"),
+      jwt = require("jwt-simple"),
 	  UserModel = require("../models/usermodel");
 
 
-GLOBAL.router.post("/authenticate",function(request,response,next) {
-	let requestBody = request.body,
-		userid = requestBody.userid,
-		email = requestBody.email,
-		userAll = new UserModel(),
-		userDetails = userAll.getUserDetails(userid,email),
-		expires,
-		payload,
-		token,
-		secretKey;
-
-    if(userDetails){
-    	expires = moment().add(1,'days').valueOf();
-    	payload = { 
-    				iss: userDetails.userId,
-		            exp: expires
-		          };
-		secretKey = process.env.NODE_ENV;
-		token = GLOBAL.jwt.encode(payload, secretKey, 'HS512');
-		response.status(200).send(token);
-    }
-	else{
-		response.status(401).send("Not Authorized!!!");
-	}
-});
-
-GLOBAL.router.post("/getuser",function(request,response,next) {
-	  	let secretKey = process.env.NODE_ENV,
-	  		tokenheader = request.headers['authorization'],
-	  		token,
-	  		payLoad={},
-	  		userAll,
-	  		userDetails,
-	  		userid=0;
+router.get("/",function(request,response,next) {
+	let secretKey = process.env.NODE_ENV,
+	  	tokenheader = request.headers['authorization'],
+	  	token,
+	  	payLoad={},
+	  	userAll,
+	  	userDetails,
+	  	userid=0;
   		if(tokenheader){
   			token=tokenheader.split(" ")[1];
-  			payLoad=GLOBAL.jwt.decode(token, secretKey, false, 'HS512');
+  			payLoad=jwt.decode(token, secretKey, false, 'HS512');
 			if(payLoad.iss){
 				userAll = new UserModel();
 				userid = payLoad.iss;
@@ -62,12 +39,22 @@ GLOBAL.router.post("/getuser",function(request,response,next) {
 		}
 });
 
-GLOBAL.router.put("/updateuser",function(request,response,next) {
-				let userAll = new UserModel(),
-				userDetails = userAll.updateByUserId('userid');
+router.post("/",function(request,response,next) {
+	let userAll = new UserModel(),
+		userDetails = userAll.createUser('userid');
+	response.status(200).json(userDetails);
 });
 
-GLOBAL.router.delete("/deleteuser",function(request,response,next) {
-				let userAll = new UserModel(),
-				userDetails = userAll.deleteByUserId('userid');
+router.put("/",function(request,response,next) {
+	let userAll = new UserModel(),
+		userDetails = userAll.updateByUserId('userid');
+	response.status(200).json(userDetails);	
 });
+
+router.delete("/",function(request,response,next) {
+	let userAll = new UserModel(),
+		userDetails = userAll.deleteByUserId('userid');
+	response.status(200).json(userDetails);
+});
+
+module.exports=router;

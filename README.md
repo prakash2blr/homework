@@ -8,7 +8,7 @@
 4) npm start
 
 # API
-1) go to your favourite rest client and use below details to authenticate user<br />
+1) Go to your favourite rest client and use below details to Authenticate user<br />
 	url : `http://<domain>:port(default is 3001 )/api/authenticate`<br />
 	type : POST<br />
 	payload : <br />{<br />
@@ -17,9 +17,9 @@
 		}<br />
 	response : auth token<br />
 
-2) go to your favourite rest client and use below details to get user details<br />
-	url : `http://<domain>:port(default is 3001 )/api/getuser`<br />
-	type : POST<br />
+2) Go to your favourite rest client and use below details to get User<br />
+	url : `http://<domain>:port(default is 3001 )/api/user`<br />
+	method : GET<br />
 	header : `Bearer <auth token from authenticate api>`<br />
 	response : user object<br />
 	for example<br />
@@ -33,7 +33,29 @@
 		  &nbsp;"region": "CA",<br />
 		  &nbsp;"phoneNumber": "408-1234567",<br />
 		  &nbsp;"emailAddress": "romin@gmail.com"<br />
-		}<br />
+		}
+<br />
+
+3) Go to your favourite rest client and use below details to Create user<br />
+	url : `http://<domain>:port(default is 3001 )/api/user`<br />
+	method : POST<br />
+	header : `Bearer <auth token from authenticate api>`<br />
+	response : Response Text
+<br />
+
+4) Go to your favourite rest client and use below details to Update user<br />
+	url : `http://<domain>:port(default is 3001 )/api/user`<br />
+	method : PUT<br />
+	header : `Bearer <auth token from authenticate api>`<br />
+	response : Response Text
+<br />
+
+5) Go to your favourite rest client and use below details to Delete user<br />
+	url : `http://<domain>:port(default is 3001 )/api/user`<br />
+	method : DELETE<br />
+	header : `Bearer <auth token from authenticate api>`<br />
+	response : Response Text
+<br />
 
 ### Please go through employee.json file for sample data<br />
-### Update and Delete APIs are dummy APIs<br />
+### Create,Update and Delete are dummy APIs<br />

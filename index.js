@@ -2,17 +2,13 @@
 const express = require("express"),
 	  request = require("request"),
 	  bodyParser = require('body-parser'),
+	  jwt = require("jwt-simple"),	  
+	  router = express.Router(),
 	  app = express(),
-	  port = process.env.PORT || 3001;
-
-GLOBAL.jwt = require("jwt-simple");	  
-GLOBAL.router = express.Router();
-
-const middleWare = require("./app/middleware"),
-	  user = require("./app/controllers/user");
+	  port = process.env.PORT || 3001,
+	  middleWare = require("./app/middleware"),
+	  user = require("./app/controllers")(app);
 
 app.use(bodyParser.json());
-
-app.use('/api', GLOBAL.router);
 
 app.listen(port);
