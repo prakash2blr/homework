@@ -23,7 +23,7 @@
 	<ul>
 		<li>URL : `http://<domain>:port(default is 3001 )/api/user`</li>
 		<li>Method : GET</li>
-		<li>Header : `Bearer <auth token from authenticate api>`</li>
+		<li>Header : `Bearer [auth token from authenticate api]`</li>
 		<li>Response : User object<br/>
 		&nbsp;&nbsp;for example : <br />
 		  &nbsp;&nbsp;&nbsp;&nbsp;{<br />
@@ -43,7 +43,7 @@
 	<ul>
 		<li>URL : `http://<domain>:port(default is 3001 )/api/user`</li>
 		<li>Method : POST</li>
-		<li>Header : `Bearer <auth token from authenticate api>`</li>
+		<li>Header : `Bearer [auth token from authenticate api]`</li>
 		<li>Response : Response Text</li>
 	</ul>
 
@@ -51,7 +51,7 @@
 	<ul>
 		<li>URL : `http://<domain>:port(default is 3001 )/api/user`</li>
 		<li>Method : PUT</li>
-		<li>Header : `Bearer <auth token from authenticate api>`</li>
+		<li>Header : `Bearer [auth token from authenticate api]`</li>
 		<li>Response : Response Text</li>
 	</ul>
 
@@ -59,7 +59,7 @@
 	<ul>
 		<li>URL : `http://<domain>:port(default is 3001 )/api/user`</li>
 		<li>Method : DELETE</li>
-		<li>Header : `Bearer <auth token from authenticate api>`</li>
+		<li>Header : `Bearer [auth token from authenticate api]`</li>
 		<li>Response : Response Text</li>
 	</ul>
 
