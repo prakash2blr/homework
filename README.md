@@ -9,19 +9,19 @@
 
 # API
 1) Go to your favourite rest client and use below details to Authenticate user<br />
-	url : `http://<domain>:port(default is 3001 )/api/authenticate`<br />
-	type : POST<br />
-	payload : <br />{<br />
+	URL : `http://<domain>:port(default is 3001 )/api/authenticate`<br />
+	Method : POST<br />
+	Payload : <br />{<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"userid":"userId from employee.json file",<br />
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"email":"emailAddress from employee.json file"<br />
 		}<br />
-	response : auth token<br />
+	Response : Auth token<br />
 
 2) Go to your favourite rest client and use below details to get User<br />
-	url : `http://<domain>:port(default is 3001 )/api/user`<br />
-	method : GET<br />
-	header : `Bearer <auth token from authenticate api>`<br />
-	response : user object<br />
+	URL : `http://<domain>:port(default is 3001 )/api/user`<br />
+	Method : GET<br />
+	Header : `Bearer <auth token from authenticate api>`<br />
+	Response : User object<br />
 	for example<br />
 	  {<br />
 		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"userId": "1",<br />
@@ -37,24 +37,24 @@
 <br />
 
 3) Go to your favourite rest client and use below details to Create user<br />
-	url : `http://<domain>:port(default is 3001 )/api/user`<br />
-	method : POST<br />
-	header : `Bearer <auth token from authenticate api>`<br />
-	response : Response Text
+	URL : `http://<domain>:port(default is 3001 )/api/user`<br />
+	Method : POST<br />
+	Header : `Bearer <auth token from authenticate api>`<br />
+	Response : Response Text
 <br />
 
 4) Go to your favourite rest client and use below details to Update user<br />
-	url : `http://<domain>:port(default is 3001 )/api/user`<br />
-	method : PUT<br />
-	header : `Bearer <auth token from authenticate api>`<br />
-	response : Response Text
+	URL : `http://<domain>:port(default is 3001 )/api/user`<br />
+	Method : PUT<br />
+	Header : `Bearer <auth token from authenticate api>`<br />
+	Response : Response Text
 <br />
 
 5) Go to your favourite rest client and use below details to Delete user<br />
-	url : `http://<domain>:port(default is 3001 )/api/user`<br />
-	method : DELETE<br />
-	header : `Bearer <auth token from authenticate api>`<br />
-	response : Response Text
+	URL : `http://<domain>:port(default is 3001 )/api/user`<br />
+	Method : DELETE<br />
+	Header : `Bearer <auth token from authenticate api>`<br />
+	Response : Response Text
 <br />
 
 ### Please go through employee.json file for sample data<br />
