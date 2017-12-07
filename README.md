@@ -8,7 +8,7 @@
 4) npm start
 
 # API
-1) Open your favourite rest client and use below details to Authenticate user<br />
+1) Open your favourite rest client and use below details to Authenticate User.
 	<ul>
 		<li>URL : `http://<domain>:port(default is 3001 )/api/authenticate`</li>
 		<li>Method : POST</li>
@@ -19,14 +19,14 @@
 		</li>
 		<li>Response : Auth token</li>
 	</ul>
-
-2) Open your favourite rest client and use below details to get User<br />
-	&nbsp;&nbsp;URL : `http://<domain>:port(default is 3001 )/api/user`<br />
-	&nbsp;&nbsp;Method : GET<br />
-	&nbsp;&nbsp;Header : `Bearer <auth token from authenticate api>`<br />
-	&nbsp;&nbsp;Response : User object<br />
-	&nbsp;&nbsp;for example<br />
-	  &nbsp;&nbsp;{<br />
+2) Open your favourite rest client and use below details to get User.
+	<ul>
+		<li>URL : `http://<domain>:port(default is 3001 )/api/user`</li>
+		<li>Method : GET</li>
+		<li>Header : `Bearer <auth token from authenticate api>`</li>
+		<li>Response : User object<br/>
+		&nbsp;&nbsp;for example : <br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;{<br />
 		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"userId": "1",<br />
 		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"jobTitleName": "Developer",<br />
 		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"firstName": "Romin",<br />
@@ -36,29 +36,32 @@
 		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"region": "CA",<br />
 		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"phoneNumber": "408-1234567",<br />
 		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"emailAddress": "romin@gmail.com"<br />
-		&nbsp;&nbsp;}
-<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;}
+		</li>
+	</ul>
+3) Open your favourite rest client and use below details to Create user.
+	<ul>
+		<li>URL : `http://<domain>:port(default is 3001 )/api/user`</li>
+		<li>Method : POST</li>
+		<li>Header : `Bearer <auth token from authenticate api>`</li>
+		<li>Response : Response Text</li>
+	</ul>
 
-3) Open your favourite rest client and use below details to Create user<br />
-	&nbsp;&nbsp;URL : `http://<domain>:port(default is 3001 )/api/user`<br />
-	&nbsp;&nbsp;Method : POST<br />
-	&nbsp;&nbsp;Header : `Bearer <auth token from authenticate api>`<br />
-	&nbsp;&nbsp;Response : Response Text
-<br />
+4) Open your favourite rest client and use below details to Update user.
+	<ul>
+		<li>URL : `http://<domain>:port(default is 3001 )/api/user`</li>
+		<li>Method : PUT</li>
+		<li>Header : `Bearer <auth token from authenticate api>`</li>
+		<li>Response : Response Text</li>
+	</ul>
 
-4) Open your favourite rest client and use below details to Update user<br />
-	&nbsp;&nbsp;URL : `http://<domain>:port(default is 3001 )/api/user`<br />
-	&nbsp;&nbsp;Method : PUT<br />
-	&nbsp;&nbsp;Header : `Bearer <auth token from authenticate api>`<br />
-	&nbsp;&nbsp;Response : Response Text
-<br />
-
-5) Open your favourite rest client and use below details to Delete user<br />
-	&nbsp;&nbsp;URL : `http://<domain>:port(default is 3001 )/api/user`<br />
-	&nbsp;&nbsp;Method : DELETE<br />
-	&nbsp;&nbsp;Header : `Bearer <auth token from authenticate api>`<br />
-	&nbsp;&nbsp;Response : Response Text
-<br />
+5) Open your favourite rest client and use below details to Delete user.
+	<ul>
+		<li>URL : `http://<domain>:port(default is 3001 )/api/user`</li>
+		<li>Method : DELETE</li>
+		<li>Header : `Bearer <auth token from authenticate api>`</li>
+		<li>Response : Response Text</li>
+	</ul>
 
 ### Please go through employee.json file for sample data<br />
 ### Create,Update and Delete are dummy APIs<br />
